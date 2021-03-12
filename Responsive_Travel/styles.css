@@ -1,0 +1,90 @@
+html {
+  background-color: Aquamarine;
+}
+
+body {
+  background-color: coral;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid dodgerblue;
+}
+
+header {
+  display: block;
+  text-align: center;
+  background-image: url(Branson.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+h1 {
+  display: block;
+  padding-top: 50px;
+  padding-left: 15%;
+  color: White;
+}
+
+div {
+  display: block;
+}
+
+.art1, .art2, .art3 {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  background-color: lightsalmon;
+}
+
+.art3 {
+  margin-right: 0%;
+}
+
+.box {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 568px) {
+  .art1, .art2, .art3 {
+    width: 100%;
+    float: none;
+  }
+
+  .box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .art1, .art2 {
+    width: 45%;
+    float:left;
+  }
+
+  .box {
+    display: block;
+    text-align: center;
+    padding: 25px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+ @media screen and (max-width: 999px) {
+  .art1, .art2, .art3 {
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  .art3 {
+    float: left;
+    margin-right: 0%;
+  }
+}

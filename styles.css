@@ -1,0 +1,127 @@
+/* Name: Ashton Hash
+Date: 3/12/2021
+FileName: styles.css
+ProjectName: FinalProject */
+html {
+  background-image: url(ArkBlueprint.webp);
+  background-size: cover;
+}
+body {
+  display: block;
+  width: 60%;
+  margin: 0 20% 0 20%;
+}
+
+.AboutMe {
+  display: grid;
+  text-align: center;
+  background-color: rgba(0, 92, 89, 0.4);
+  grid-template-areas: 'photo blurb blurb';
+  grid-gap: 20px;
+}
+
+.photo {
+  grid-area: photo;
+  background-image: url(Ashton_Pic_1.jpg);
+  width: 313px;
+  background-size: cover;
+  overflow: visible;
+  padding: 3rem;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.blurb {
+  grid-area: blurb;
+}
+
+.card {
+  grid-gap: 20px;
+}
+
+footer {
+  text-align: center;
+  background: rgba(70,70,70,0.8);
+  color: cyan
+}
+
+.P-Display {
+  display: grid;
+  grid-template-areas: 'P-title P-title' 'P-sub-title1 P-sub-title2' 'P-project1 P-project2';
+  grid-gap: 20px;
+  background-color: rgba(0, 92, 89, 0.4);
+  padding-top: 20px;
+}
+
+.P-title {
+  grid-area: P-title;
+  text-align: center;
+}
+
+.P-sub-title1 {
+  grid-area: P-sub-title1;
+  text-align: center;
+}
+
+.P-sub-title2 {
+  grid-area: P-sub-title2;
+  text-align: center;
+}
+
+.P-project1 {
+  grid-area: P-project1;
+}
+
+.P-project2 {
+  grid-area: P-project2;
+}
+
+.H-Display {
+  display: grid;
+  grid-template-areas: 'H-title H-title' 'H-sub-title1 H-sub-title2' 'H-project1 H-project2';
+  grid-gap: 20px;
+  background-color: rgba(0, 92, 89, 0.4);
+  padding-top: 20px;
+}
+
+.H-title {
+  grid-area: H-title;
+  text-align: center;
+}
+
+.H-sub-title1 {
+  grid-area: H-sub-title1;
+  text-align: center;
+}
+
+.H-sub-title2 {
+  grid-area: H-sub-title2;
+  text-align: center;
+}
+
+.H-project1 {
+  grid-area: H-project1;
+}
+
+.H-project2 {
+  grid-area: H-project2;
+}
+
+@media (max-width: 650px) {
+  .P-Display {
+    grid-template-areas: 'P-title' 'P-sub-title1' 'P-project1' 'P-sub-title2' 'P-project2';
+  }
+
+  .H-Display {
+    grid-template-areas: 'H-title' 'H-sub-title1' 'H-project1' 'H-sub-title2' 'H-project2';
+  }
+}
+
+@media (max-width: 1050px) {
+  .AboutMe {
+    grid-template-areas: 'blurb blurb'
+  }
+
+  .photo {
+    display: none;
+  }
+}
